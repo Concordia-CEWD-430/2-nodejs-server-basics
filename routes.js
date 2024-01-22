@@ -40,4 +40,12 @@ const requestHandler = (req, res) => {
   return res.end();
 };
 
-module.exports = requestHandler;
+// module.exports = requestHandler;
+
+// module.exports = {
+//     handler: requestHandler,
+//     someText: 'any string here'
+// }
+
+exports.handler = requestHandler;
+exports.someText = "any string here";
